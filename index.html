@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAR RENTAL</title>
+    <link rel="stylesheet" href="home.css" />
+    <script
+      src="https://kit.fontawesome.com/527eaedd2c.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script> -->
+  </head>
+  <body>
+    <header>
+      <div id="headerCont">
+        <img src="/assets/webLogo.png" alt="" id="weblogo" />
+        <div id="linkPagesContainer">
+          <a href="" class="headerNavLinks">HOME</a>
+          <a href="" class="headerNavLinks">RESERVATION</a>
+          <a href="" class="headerNavLinks">SHUTTLE SERVICE</a>
+          <a href="" class="headerNavLinks">AIRPORT TRANSFER</a>
+          <a href="" class="headerNavLinks">ABOUT US</a>
+          <a href="" class="headerNavLinks">CONTACT US</a>
+          <a href="" class="headerNavLinks">MANAGE BOOKING</a>
+        </div>
+        <div id="arrowMenuContainer">
+          <div id="arrowMenuIcon">
+            <i
+              class="fa-regular fa-square-caret-down"
+              id="menuIcon"
+              onclick=" toggleMenu()"
+            ></i>
+          </div>
+          <div id="arrowBtnMenu">
+            <a href="" class="headerNavLinks">HOME</a>
+            <a href="" class="headerNavLinks">RESERVATION</a>
+            <a href="" class="headerNavLinks">SHUTTLE SERVICE</a>
+            <a href="" class="headerNavLinks">AIRPORT TRANSFER</a>
+            <a href="" class="headerNavLinks">ABOUT US</a>
+            <a href="" class="headerNavLinks">CONTACT US</a>
+            <a href="" class="headerNavLinks">MANAGE BOOKING</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- **************** -->
+    <!-- LANDING PAGE -->
+    <main>
+      <section id="home">
+        <div id="homeContainer">
+          <div id="sloganContainer">
+            <h2 id="slogan">RENT A CAR - BEST RENTAL CAR IN TACLOBAN</h2>
+            <h6 id="secondSlogan">
+              Choose Dates & Time and Book your Car or Van
+            </h6>
+          </div>
+          <div class="greyShell">
+            <div class="inputContainer">
+              <label class="inputLabel" for="pickUpDate">Pick-up Date</label>
+              <input
+                type="date"
+                id="pickUpDate"
+                name="pickUpDate"
+                class="inputBox"
+              />
+            </div>
+            <div class="inputContainer">
+              <label class="inputLabel" for="pickUpTime">Pick-up Time</label>
+              <input
+                type="time"
+                id="pickUpTime"
+                name="pickUpTime"
+                class="inputBox"
+              />
+            </div>
+            <div class="inputContainer">
+              <label class="inputLabel" for="returnDate">Return Date</label>
+              <input
+                type="date"
+                id="returnDate"
+                name="returnDate"
+                class="inputBox"
+              />
+            </div>
+            <div class="inputContainer">
+              <label class="inputLabel" for="returnTime">Return Time</label>
+              <input
+                type="time"
+                id="returnTime"
+                name="returnTime"
+                class="inputBox"
+              />
+            </div>
+          </div>
+          <div class="greyShell">
+            <div class="inputContainer">
+              <label class="inputLabel" for="pickUpLocation"
+                >Pick-up Location</label
+              >
+              <input
+                type="text"
+                id="pickUpLocation"
+                name="pickUpLocation"
+                class="inputBox"
+                autocomplete="on"
+              />
+            </div>
+            <div class="inputContainer">
+              <label class="inputLabel" for="returnLocation"
+                >Return Location</label
+              >
+              <input
+                type="text"
+                id="returnLocation"
+                name="returnLocation"
+                class="inputBox"
+                autocomplete="on"
+              />
+            </div>
+          </div>
+          <div class="greyShell">
+            <div class="inputContainer">
+              <label class="inputLabel" for="username">Name*</label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                class="inputBox"
+              />
+            </div>
+            <div class="inputContainer">
+              <label class="inputLabel" for="email">Email*</label>
+              <input type="text" id="email" name="email" class="inputBox" />
+            </div>
+            <div class="inputContainer">
+              <label class="inputLabel" for="username">Phone Number</label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                class="inputBox"
+              />
+            </div>
+          </div>
+          <div class="greyShell">
+            <h3 id="quoteText">Get A QUOTE NOW</h3>
+          </div>
+        </div>
+      </section>
+      <section id="reservation">RESERVATION</section>
+    </main>
+    <script src="/toggle.js"></script>
+    <!-- <script>
+      var autocomplete = new google.maps.places.Autocomplete(
+        document.getElementById("pickUpLocation"),
+        {
+          types: ["geocode"],
+          componentRestrictions: { country: "PH" }, // Restrict to Philippines (country code: PH)
+        }
+      );
+      var autocomplete = new google.maps.places.Autocomplete(
+        document.getElementById("returnLocation"),
+        {
+          types: ["geocode"],
+          componentRestrictions: { country: "PH" }, // Restrict to Philippines (country code: PH)
+        }
+      );
+    </script> -->
+  </body>
+</html>
