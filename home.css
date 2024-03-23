@@ -17,6 +17,11 @@ header {
   /* padding: 20px; */
   /* flex: 1; */
 }
+@media only screen and (max-width: 1400px) {
+  header {
+    /* padding: 20px; */
+  }
+}
 
 #headerCont {
   display: flex;
@@ -117,7 +122,7 @@ main {
 /* LANDING PAGE */
 
 #home {
-  background-image: url("/assets/cars/carBackgroundTwo.jpg");
+  background-image: url("../assets/cars/carBackgroundTwo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #f8a25b;
@@ -154,6 +159,12 @@ main {
   margin: 0;
   margin-bottom: 20px;
 }
+@media only screen and (max-width: 1400px) {
+  #slogan {
+    font-size: 3.5rem;
+    text-align: left;
+  }
+}
 #secondSlogan {
   color: whitesmoke;
   margin-top: 0;
@@ -167,6 +178,11 @@ main {
   gap: 30px;
   /* background-color: grey; */
   width: 100%;
+}
+@media only screen and (max-width: 1400px) {
+  .greyShell {
+    flex-wrap: wrap;
+  }
 }
 .inputContainer {
   /* background-color: #109c06; */
@@ -187,7 +203,8 @@ main {
   border: none !important;
   font-size: 20px;
   font-weight: bold;
-  padding: px;
+  padding: 0px 10px 0px 10px;
+  box-shadow: none;
 }
 
 #quoteText {
