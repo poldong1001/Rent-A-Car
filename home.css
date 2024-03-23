@@ -122,7 +122,7 @@ main {
 /* LANDING PAGE */
 
 #home {
-  background-image: url("../assets/cars/carBackgroundTwo.jpg");
+  background-image: url("assets/cars/carBackgroundTwo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #f8a25b;
