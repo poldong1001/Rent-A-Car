@@ -114,6 +114,9 @@ header {
 /* ****************  */
 /* MAIN */
 main {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
   /* display: block;
   position: static !important; */
 }
@@ -127,7 +130,8 @@ main {
   background-size: cover;
   background-color: #f8a25b;
   width: 100%;
-  height: 100dvh;
+  /* height: 100dvh; */
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
 
@@ -205,16 +209,139 @@ main {
   font-weight: bold;
   padding: 0px 10px 0px 10px;
   box-shadow: none;
+  color: rgb(128, 128, 128);
 }
 
 #quoteText {
   background-color: #f8a25b;
   border-radius: 25px;
   padding: 15px;
-  color: rgb(24, 27, 225);
+  color: rgb(253, 253, 255);
 }
-#reservation {
-  background-color: #109c06;
+/* ****************  */
+/* HOME FIRST SECTIO*/
+#homeFirstSection {
   width: 100%;
-  height: 100dvh;
+  /* background-color: #f8a25b; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#hfsHeader {
+  display: flex;
+  justify-content: center;
+  font-size: 45px;
+}
+@media only screen and (max-width: 1400px) {
+  #hfsHeader {
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+  }
+}
+#crn {
+  /* background-color: black; */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 1400px) {
+  #crn {
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.crnCard {
+  max-width: 300px;
+  /* background-color: blue; */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.crnImagescontent {
+  /* background-color: rgb(255, 255, 255); */
+  padding: 10px;
+}
+#hfsHeader h2 {
+  font-size: 40px;
+  /* color: #ff08b5; */
+}
+.crnImages {
+  border-radius: 10px 10px 0 0;
+  /* width: 10%px; */
+  /* height: auto; */
+  /* height: 250px; */
+}
+.fa-star {
+  color: rgb(255, 161, 10);
+}
+/* ****************  */
+/* SECOND HOME*/
+#homeSecondSection {
+  /* background-color: #109c06; */
+  width: 100%;
+  margin-top: 80px;
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  flex-direction: column;
+}
+#pubsPosterContainer {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.pubCars {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+#carsCatalog {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#catalogFirstChild {
+  display: flex;
+
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+#catalogTitle {
+  font-size: 40px;
+  margin: 0;
+}
+#secondCatalogTitle {
+  font-size: 20px;
+}
+#carsCardsContainer {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.carsCard {
+  background-color: rgb(255, 255, 255);
+  width: 300px;
+  height: 400px;
+  /* flex: 1; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+.carsImages {
+  width: 80%;
+  height: auto;
+}
+.card-conten {
+  /* background-color: red; */
 }
